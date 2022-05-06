@@ -52,6 +52,28 @@ footer{
     padding: 20px;
 }
 
+.cliente{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.pesquisarCliente{
+    display: flex;
+    width: 70%;
+}
+
+.pesquisar{
+    height: 40px;
+    width: 100%;
+}
+
+.btnPesquisar{
+    height: 40px;
+    width: 40px;
+}
+
 @media (max-width:480px){
     header{
         position:fixed;
@@ -60,7 +82,9 @@ footer{
     .header-title{
         font-size: 1.5rem;
     }
-
+    .pesquisarCliente{
+        position: fixed;
+    }
     main{
         padding: 0;
         margin: 20px 0 0 0;

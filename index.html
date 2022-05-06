@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/records.css">
@@ -17,7 +18,15 @@
         <h1 class="header-title">Cadastro de Clientes</h1>
     </header>
     <main>
-        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+        <div class="cliente">
+            <button type="button" class="button blue mobile" id="cadastrarCliente" onclick="openModal()">Cadastrar Cliente</button>
+
+            <div class="pesquisarCliente">
+                <input type="text" class="pesquisar"> 
+                <button class="btnPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>      
+        </div>
+
         <table class="records">
             <thead>
                 <tr>
@@ -34,7 +43,7 @@
             <div class="modal-content">
                 <header class="modal-header">
                     <h2>Novo Cliente</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
+                    <span class="modal-close" id="modalClose" onclick="closeModal()">&#10006;</span>
                 </header>
                 <form class="modal-form">
                     <input type="text" class="modal-field" placeholder="Nome do Cliente" required>
@@ -43,8 +52,8 @@
                     <input type="text" class="modal-field" placeholder="Cidade do Cliente" required>
                 </form>
                 <footer class="modal-footer">
-                    <button class="button green salvar">Salvar</button>
-                    <button class="button blue cancelar">Cancelar</button>
+                    <button class="button green salvar" onclick="cadastrarCliente( )">Salvar</button>
+                    <button class="button blue cancelar" id="btnClose" onclick="closeModal()">Cancelar</button>
                 </footer>
             </div>
         </div>
