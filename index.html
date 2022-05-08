@@ -22,8 +22,15 @@
             <button type="button" class="button blue mobile" id="cadastrarCliente" onclick="openModal()">Cadastrar Cliente</button>
 
             <div class="pesquisarCliente">
+                <select id="filtro">
+                    <option value="inicioFiltro">Filtrar por</option>
+                    <option value="nome">Nome</option>
+                    <option value="email">E-mail</option>
+                    <option value="celular">Celular</option>
+                    <option value="cidade">Cidade</option>
+                </select>
                 <input type="text" class="pesquisar"> 
-                <button class="btnPesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="btnPesquisar" onclick="pesquisar()"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>      
         </div>
 
@@ -62,5 +69,6 @@
         Copyright &copy; Prof. Fernando Leonid
     </footer>
     <script src="./Script/main.js"></script>
+    <script src="./Script/pesquisar.js"></script>
 </body>
 </html>

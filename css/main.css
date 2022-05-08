@@ -64,14 +64,38 @@ footer{
     width: 70%;
 }
 
+.pesquisarCliente select{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pesquisarCliente select:focus{
+    outline: none;
+}
+
 .pesquisar{
     height: 40px;
     width: 100%;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+.pesquisar:focus{
+    outline: none;
+    border-left: none;
+    border-right: none;
 }
 
 .btnPesquisar{
     height: 40px;
-    width: 40px;
+    width: 60px;
+    border: 1px solid black;
+    border-left: none;
+    background: transparent;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
 }
 
 @media (max-width:480px){

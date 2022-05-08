@@ -26,6 +26,10 @@
     background-color: var(--secundary-color);
 }
 
+tbody tr.invisivel{
+    display: none;
+}
+
 @media(max-width:480px){
     .records{
         border-spacing: 5px;

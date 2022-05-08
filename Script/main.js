@@ -108,10 +108,10 @@ function criarElemento (cliente, id) {
     trItem.id = id; 
     trItem.innerHTML = `
     <tr class="tabelCliente" id="${id}">
-        <td>${cliente.nome}</td>
-        <td>${cliente.email}</td>
-        <td>${cliente.celular}</td>
-        <td>${cliente.cidade}</td>
+        <td class="nome">${cliente.nome}</td>
+        <td class="email">${cliente.email}</td>
+        <td class="celular">${cliente.celular}</td>
+        <td class="cidade">${cliente.cidade}</td>
         <td>
             <button id="editar" type="button" class="button green" data-index="${id}" onclick="editarItem(this)">editar</button>
             <button id="excluir" type="button" class="button red" data-index="${id}" onclick="removerItem(this)">excluir</button>
